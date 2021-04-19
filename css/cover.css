@@ -44,18 +44,11 @@ body {
 }
 
 video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  position: fixed;
+ right: 0;
+ bottom: 0;
+ min-width: 100%;
+ min-height: 100%;
 }
 .overlay {
   position: absolute;
@@ -76,6 +69,12 @@ video {
  */
 .masthead {
   margin-bottom: 2rem;
+  position: fixed;
+ top: 0;
+
+ color: #f1f1f1;
+ width: 100%;
+ padding: 20px;
 }
 
 .masthead-brand {
@@ -145,6 +144,15 @@ video {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+footer{
+  position: fixed;
+ bottom: 0;
+
+ color: #f1f1f1;
+ width: 100%;
+ padding: 20px;
 }
 
 footer table{
